@@ -291,7 +291,7 @@ i:hover {
 
 @media only screen and (max-width : 440px)  {
   .hero-text h1 {
-    font-size: 55px;
+    font-size: 35px;
     padding: 20px 0px;
   }
 }
