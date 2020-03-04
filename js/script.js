@@ -150,7 +150,7 @@ window.addEventListener('scroll', function() {
 });
 
 // smooth scroll
-$('#navbar a').on('click', function(e) {
+$('#navbar a, .hero_button').on('click', function(e) {
   if (this.hash !== '') {
     e.preventDefault();
 
@@ -158,7 +158,7 @@ $('#navbar a').on('click', function(e) {
     console.log(hash);
 
     console.log();
-    var position = $(hash).offset().top - 15;
+    var position = $(hash).offset().top - 100;
     
     
     $('html, body')
