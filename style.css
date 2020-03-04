@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   line-height: 150%;
+  color: #777;
   /* overflow-x: hidden; */
 }
 
@@ -26,10 +27,18 @@ h1, h2 {
 h1 {
   font-size: 72px;
   color: #fd5151;
+  letter-spacing: 2px;
+  transition: all .2s;
 }
 
 h2 {
   font-size: 50px;
+  color: #fd5151;
+}
+
+h2:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 5px 10px 20px rgba(18, 18, 18, 0.6);
 }
 
 .wrapper {
@@ -200,20 +209,30 @@ tr:nth-child(even) {
   border-top: 1px solid #fd5151;
   background-color: #121212;
   padding: 10px;
+  color: rgb(182, 177, 177);
+}
+
+#footer a {
+  text-decoration: none;
   color: #fff;
+}
+
+a:hover span {
+  color: rgb(182, 177, 177);
 }
 
 i {
   cursor: pointer;
+  color: #fff;
 }
 
 i:hover {
   transform: scale(1.4);
+  color: rgb(182, 177, 177);
 }
 
 .copyrights {
   font-size: 16px;
-  color: grey;
 }
 
 
@@ -223,6 +242,8 @@ i:hover {
 @media only screen and (max-width : 495px)  {
   #navbar {
     position: relative;
+    position: sticky;
+
   }
 
   #navbar img {
