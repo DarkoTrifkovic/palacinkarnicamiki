@@ -27,7 +27,7 @@ function startTimer() {
 const gallery = document.querySelector('.gallery');
 const gallery_img = document.createElement('img');
 
-for (let i = 1; i < 13; i++) {
+for (let i = 1; i < 28; i++) {
   const gallery_img = document.createElement('img');
   gallery_img.src = "img/img" + [i] + ".jpg"
   gallery.appendChild(gallery_img);
@@ -41,6 +41,10 @@ const menuArr1 = [
   { naziv : 'Beli krem', cena : '165.00'},
   { naziv : 'Eurokrem', cena : '175.00'},
   { naziv : 'Crni krem', cena : '165.00'},
+  { naziv : 'Crna palačinka', cena : '140.00'},
+  { naziv : 'Crna palačinka + crni krem', cena : '180.00'},
+  { naziv : 'Crna palačinka + beli krem', cena : '180.00'},
+  { naziv : 'Palačinka vanila', cena : '210.00'},
   { naziv : 'Beli krem - plazma', cena : '190.00'},
   { naziv : 'Krem - plazma', cena : '190.00'},
   { naziv : 'Marmelada (Mešano voće)', cena : '160.00'},
@@ -51,28 +55,37 @@ const menuArr1 = [
   { naziv : 'Nutella (plazma, banana)', cena : '260.00'},
   { naziv : 'Kinder', cena : '250.00'},
   { naziv : 'Snickers (krem, plazma, kikiriki, šlag)', cena : '250.00'},
-  { naziv : 'Bounty (krem, kokos, slag)', cena : '240.00'},
+  { naziv : 'Bounty (krem, kokos, slag, bounty čokoladica)', cena : '240.00'},
   { naziv : 'Svarcvald (krem, višnja, plazma, šlag)', cena : '250.00'},
-  { naziv : 'Cheesecake (krem, višnja)', cena : '260.00'},
-  { naziv : 'Rafaelo (linolada, kokos, bademi)', cena : '240.00'},
+  { naziv : 'Cheesecake (krem, višnje, pavlaka)', cena : '260.00'},
+  { naziv : 'Rafaelo (beli krem, kokos, bademi)', cena : '240.00'},
   { naziv : 'Ferrero Rocher (nutella, lešnik, plazma)', cena : '270.00'},
+  { naziv : 'Bueno (Bueno krem)', cena : '290.00'},
+  { naziv : 'Čoko Bueno (Euro krem, kinder bueno čokoladica)', cena : '390.00'},
   { naziv : 'Milka bela čokolada', cena : '225.00'},
   { naziv : 'Milka noissete', cena : '225.00'},
   { naziv : 'Milka mlečna', cena : '225.00'},
   { naziv : 'Miki Maus - specijal (krem, plazma u mleku, banana, kokos, čokolada, šlag, toping čokolada)', cena : '310.00'},
   { naziv : 'Posna (posni krem)', cena : '160.00'},
-  { naziv : 'Posna (posni krem, banana)', cena : '195.00'}
+  { naziv : 'Posna (posni krem, banana)', cena : '195.00'},
+  { naziv : 'Čoko Bomba (Euro krem, čoko kuglice, šlag, kinder štapići, ferero štapići, toping čokolada)', cena : '380.00'},
+  { naziv : 'Voćna Bomba (Beli krem, višnje, maline, kupine, banana, šlag, toping šumsko voće)', cena : '380.00'},
+  { naziv : 'Vanila Bomba (Vanila krem, višnje, banana, šlag, plazma)', cena : '390.00'},
+  { naziv : 'Kinder Bomba (Bueno krem, kinder bueno čokoladice, kinder čokoladice)', cena : '450.00'}
 ];
 
 // Slane palacinke
 
 const menuArr2 = [
-  { naziv : 'Pizza (pizza šunka, pizza sos, sir, šampinjoni, masline)', cena : '275.00'},
+  { naziv : 'Pizza (pizza šunka, pizza sos, sir, šampinjoni)', cena : '275.00'},
   { naziv : 'Kulen (kulen, sir, šampinjoni)', cena : '295.00'},
   { naziv : 'Šunka (šunka, sir, šampinjoni)', cena : '290.00'},
   { naziv : 'Suvi vrat (suvi vrat, sir, šampinjoni)', cena : '290.00'},
   { naziv : 'Posna (tunjevina)', cena : '240.00'},
   { naziv : 'Miki Maus - specijal (šunka, kulen, suvi vrat, sir, šampinjoni)', cena : '330.00'},
+  { naziv : 'Miki Maus - slaninica (dimljena slanina, jaja, sir, šampinjoni)', cena : '380.00'},
+  { naziv : 'Mini doručak (šunka, sir, 2 jaja, 2 tost hleba)', cena : '175.00'},
+  { naziv : 'Miki doručak (dupla šunka, sir, 3 jaja, kulen, 2 tost hleba)', cena : '275.00'},
   { naziv : 'Gratis dodatci (kečap, pavlaka, ajvar, senf, majonez, masline, origano)', cena : ' '}
 ];
 
@@ -90,9 +103,9 @@ const menuArr3 = [
   { naziv : 'Kinder', cena : '250.00'},
   { naziv : 'Snickers (krem, plazma, kikiriki, šlag)', cena : '250.00'},
   { naziv : 'Svarcvald (krem, višnja, plazma, šlag)', cena : '250.00'},
-  { naziv : 'Cheesecake (krem, višnja)', cena : '250.00'},
-  { naziv : 'Bounty (krem, kokos, slag)', cena : '230.00'},
-  { naziv : 'Rafaelo (linolada, kokos, bademi)', cena : '230.00'},
+  { naziv : 'Cheesecake (krem, višnja, pavlaka)', cena : '250.00'},
+  { naziv : 'Bounty (krem, kokos, slag, bounty čokoladica)', cena : '230.00'},
+  { naziv : 'Rafaelo (beli krem, kokos, bademi)', cena : '230.00'},
   { naziv : 'Ferrero Rocher (nutella, lešnik, plazma)', cena : '260.00'},
   { naziv : 'Miki Maus - specijal (krem, plazma u mleku, banana, kokos, čokolada, šlag, toping čokolada)', cena : '260.00'}
 ];
@@ -111,8 +124,8 @@ const menuArr4 = [
   { naziv : 'Marmelada mešano voće', cena : '45.00'},
   { naziv : 'Marmelada kajsija', cena : '45.00'},
   { naziv : 'Džem od šljiva', cena : '40.00'},
-  { naziv : 'Voće (višnje / ananas / banana)', cena : '45.00 / 50.00 / 50.00'},
-  { naziv : 'Čokoladice (kinder / mars / snickers / Bounty)', cena : '50.00 / 45.00/45.00 / 45.00'},
+  { naziv : 'Voće (višnje / ananas / banana / malina / kupina)', cena : '45.00 / 50.00 / 50.00 / 60.00 / 60.00'},
+  { naziv : 'Čokoladice (kinder / kinder bueno / mars / snickers / Bounty)', cena : '60.00 / 100.00 / 45.00/45.00 / 45.00'},
   { naziv : 'Keks (plazma / plazma u mleku / oreo / jaffa)', cena : '35.00 / 65.00 / 60.00 / 60.00'},
   { naziv : 'Nadevi (višnja / jabuka / malina / šumsko voće)', cena : '45.00 / 35.00 / 45.00 / 45.00'},
   { naziv : 'Orašasti plodovi (lešnik / kikiriki / bademi / orasi)', cena : '55.00 / 45.00 / 45.00 / 55.00'},
@@ -150,7 +163,7 @@ window.addEventListener('scroll', function() {
 });
 
 // smooth scroll
-$('#navbar a').on('click', function(e) {
+$('#navbar a, .hero_button').on('click', function(e) {
   if (this.hash !== '') {
     e.preventDefault();
 
@@ -158,7 +171,7 @@ $('#navbar a').on('click', function(e) {
     console.log(hash);
 
     console.log();
-    var position = $(hash).offset().top - 15;
+    var position = $(hash).offset().top - 100;
     
     
     $('html, body')
