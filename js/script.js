@@ -27,7 +27,7 @@ function startTimer() {
 const gallery = document.querySelector('.gallery');
 const gallery_img = document.createElement('img');
 
-for (let i = 1; i < 28; i++) {
+for (let i = 1; i < 27; i++) {
   const gallery_img = document.createElement('img');
   gallery_img.src = "img/img" + [i] + ".jpg"
   gallery.appendChild(gallery_img);
