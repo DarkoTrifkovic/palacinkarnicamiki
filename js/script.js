@@ -129,7 +129,9 @@ const menuArr4 = [
   { naziv : 'Keks (plazma / plazma u mleku / oreo / jaffa)', cena : '35.00 / 65.00 / 60.00 / 60.00'},
   { naziv : 'Nadevi (višnja / jabuka / malina / šumsko voće)', cena : '45.00 / 35.00 / 45.00 / 45.00'},
   { naziv : 'Orašasti plodovi (lešnik / kikiriki / bademi / orasi)', cena : '55.00 / 45.00 / 45.00 / 55.00'},
-  { naziv : 'Ostalo (šlag / čoko mrvice / čoko bombonice / kakao / kokos / med)', cena : '40.00 / 20.00 / 25.00 / 20.00 / 25.00 / 50.00'}
+  { naziv : 'Ostalo (šlag / čoko mrvice / čoko bombonice / kakao / kokos / med)', cena : '40.00 / 20.00 / 25.00 / 20.00 / 25.00 / 50.00'},
+  { naziv : 'Džem od šljiva', cena : '40.00'},
+  { naziv : 'Piće( Coca-Cola, Knjaz Miloš, Rosa)', cena : ' '}
 ];
 
 // Populate tables with content
