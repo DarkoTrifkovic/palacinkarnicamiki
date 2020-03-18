@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 50px;
   color: #fd5151;
+  display: inline-block;
 }
 
 h2:hover {
@@ -178,6 +179,10 @@ th {
   background-color: #fd5151;
   padding: 5px;
   text-transform: uppercase;
+}
+
+tr:hover {
+  font-weight: bold;
 }
 
 td {

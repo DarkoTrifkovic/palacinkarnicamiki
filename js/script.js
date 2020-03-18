@@ -31,7 +31,7 @@ for (let i = 1; i < 27; i++) {
   const gallery_img = document.createElement('img');
   gallery_img.src = "img/img" + [i] + ".jpg"
   gallery.appendChild(gallery_img);
-  gallery_img.alt = "palacinka" + [i];
+  gallery_img.alt = "palacinka" + i;
 }
 
 // MENU
