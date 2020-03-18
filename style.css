@@ -177,6 +177,7 @@ th {
   color: gainsboro;
   background-color: #fd5151;
   padding: 5px;
+  text-transform: uppercase;
 }
 
 td {
@@ -202,6 +203,7 @@ tr:nth-child(even) {
 
 #map iframe {
   border-top: 1px solid #fd5151;
+  display: block;
 }
 
 /* FOOTER */
