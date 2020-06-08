@@ -132,7 +132,8 @@ const menuArr4 = [
   { naziv : 'Orašasti plodovi (lešnik / kikiriki / bademi / orasi)', cena : '55.00 / 45.00 / 45.00 / 55.00'},
   { naziv : 'Ostalo (šlag / čoko mrvice / čoko bombonice / kakao / kokos / med / jaje)', cena : '50.00 / 20.00 / 45.00 / 40.00 / 35.00 / 50.00 / 25.00'},
   { naziv : 'Džem od šljiva', cena : '40.00'},
-  { naziv : 'Piće( Coca-Cola, Knjaz Miloš, Rosa)', cena : ' '}
+  { naziv : 'Piće( Coca-Cola, Knjaz Miloš, Rosa)', cena : ' '},
+  { naziv : 'Kugla sladoled( čokolada, vanila, jagoda, lešnik)', cena : '60.00'}
 ];
 
 // Populate tables with content
